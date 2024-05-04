@@ -1,6 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
 
-web_app = WebAppInfo(url='https://www.instagram.com/')
+web_app = WebAppInfo(url='https://johnsardor.github.io/modul_11.github.io/')
 # 'https://johnsardor.github.io/modul_11.github.io/
 
 apple_kb = ReplyKeyboardMarkup(keyboard=[
