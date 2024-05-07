@@ -12,5 +12,6 @@ let btn5 = document.getElementById("btn5")
 
 btn1.addEventListener("Click",function () {
     tg.MainButton.setText("bnt1 bosildi")
+    tg.MainButton.show();
 })
 
