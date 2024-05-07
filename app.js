@@ -14,4 +14,20 @@ btn1.addEventListener("Click",function () {
     tg.MainButton.setText("bnt1 bosildi")
     tg.MainButton.show();
 })
+btn2.addEventListener("Click",function () {
+    tg.MainButton.setText("bnt2 bosildi")
+    tg.MainButton.show();
+})
+btn3.addEventListener("Click",function () {
+    tg.MainButton.setText("bnt3 bosildi")
+    tg.MainButton.show();
+})
+btn4.addEventListener("Click",function () {
+    tg.MainButton.setText("bnt4 bosildi")
+    tg.MainButton.show();
+})
+btn5.addEventListener("Click",function () {
+    tg.MainButton.setText("bnt5 bosildi")
+    tg.MainButton.show();
+})
 
