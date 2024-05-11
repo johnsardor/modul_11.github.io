@@ -27,7 +27,10 @@ abtn1.addEventListener("click", function () {
     number.innerText = num_count += 1;
     number.style.display = "block";
 })
-
+abtn1.addEventListener("click",function (){
+    number.innerText = num_count -= 1;
+    number.style.display = "block";
+})
 
 btn1.addEventListener("click", function () {
     tg.MainButton.setText("Burger " + num);
