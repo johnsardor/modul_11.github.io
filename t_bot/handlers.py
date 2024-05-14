@@ -4,14 +4,14 @@ from aiogram.enums import ContentType
 from aiogram.filters import CommandStart, MagicData, callback_data
 from aiogram.utils.magic_filter import MagicFilter
 
-from keyboards import app_kb
+from keyboards import apple_kb
 
 dp = Dispatcher()
 
 
 @dp.message(CommandStart())
 async def start(msg: types.Message):
-    await msg.answer("Salom", reply_markup=app_kb)
+    await msg.answer("Salom", reply_markup=apple_kb)
 
 
 @dp.message(F.func(lambda msg: msg.web_app_data.data))
