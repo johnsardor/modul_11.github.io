@@ -113,5 +113,5 @@ abtn4.addEventListener("click", function (){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    tg.sendData(item1);
+    tg.sendData(item1 + "|" + item2 +  "|" + item3 + "|" + item4);
 });
