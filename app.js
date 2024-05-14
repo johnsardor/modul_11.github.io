@@ -25,11 +25,11 @@ number = document.getElementById("count");
 abtn1.addEventListener("click", function () {
 
     number.innerText = num_count += 1;
-    number.style.display = "block";
+    number.style.display = "inner-block";
 })
-abtn1.addEventListener("click",function (){
+rbtn1.addEventListener("click",function (){
     number.innerText = num_count -= 1;
-    number.style.display = "block";
+    number.style.display = "inline-block";
 })
 
 count2 = document.getElementById("count2");
@@ -37,15 +37,15 @@ count2 = document.getElementById("count2");
 abtn2.addEventListener("click", function () {
     count2.innerText = n_count1 += 1;
     count2.style.display = "inline-block";
-    tg.MainButton.setText("Burger");
+    tg.MainButton.setText("KFC");
     tg.MainButton.show();
-    item = "Burger/3/"+count2.innerText;
+    item = "KfC/10/"+count2.innerText;
 
 })
 rbtn2.addEventListener("click", function () {
     count2.innerText = n_count2 -= 1;
     count2.style.display = "inline-block";
-    item = "Burger/3/"+count2;
+    item = "KFC/10/"+count2;
 })
 
 count3 = document.getElementById("count3");
@@ -53,15 +53,15 @@ count3 = document.getElementById("count3");
 abtn3.addEventListener("click", function () {
     count3.innerText = n_count3 += 1;
     count3.style.display = "inline-block";
-    tg.MainButton.setText("Burger");
+    tg.MainButton.setText("Pepsi");
     tg.MainButton.show();
-    item = "Burger/3/"+count1.innerText;
+    item = "Pepsi/4/"+count1.innerText;
 
 })
 rbtn3.addEventListener("click", function () {
     count3.innerText = n_count3 -= 1;
     count3.style.display = "inline-block";
-    item = "Burger/3/"+count3;
+    item = "Pepsi/4/"+count3;
 })
 
 count4 = document.getElementById("count4");
@@ -69,39 +69,39 @@ count4 = document.getElementById("count4");
 abtn4.addEventListener("click", function () {
     count1.innerText = n_count4 += 1;
     count1.style.display = "inline-block";
-    tg.MainButton.setText("Burger");
+    tg.MainButton.setText("Cola");
     tg.MainButton.show();
-    item = "Burger/3/"+count4.innerText;
+    item = "Cola/5/"+count4.innerText;
 
 })
 rbtn4.addEventListener("click", function () {
     count4.innerText = n_count4 -= 1;
     count4.style.display = "inline-block";
-    item = "Burger/3/"+count4;
+    item = "Cola/5/"+count4;
 })
 
 
-btn1.addEventListener("click", function () {
-    tg.MainButton.setText("Burger " + num);
-    item = "Burger/3$";
-    tg.MainButton.show();
-});
-btn2.addEventListener("click", function () {
-    tg.MainButton.setText("KFC");
-    item = "KFC/10$";
-    tg.MainButton.show();
-});
-btn3.addEventListener("click", function () {
-    tg.MainButton.setText("LAVASH");
-    item = "LAVASH/4$";
-    tg.MainButton.show();
-});
-btn4.addEventListener("click", function () {
-    tg.MainButton.setText("Pizza");
-    item = "Pizza/5$";
-
-    tg.MainButton.show();
-});
+// abtn1.addEventListener("click", function () {
+//     tg.MainButton.setText("Burger " + num);
+//     item = "Burger/3$";
+//     tg.MainButton.show();
+// });
+// rbtn2.addEventListener("click", function () {
+//     tg.MainButton.setText("KFC");
+//     item = "KFC/10$";
+//     tg.MainButton.show();
+// });
+// abtn3.addEventListener("click", function () {
+//     tg.MainButton.setText("LAVASH");
+//     item = "LAVASH/4$";
+//     tg.MainButton.show();
+// });
+// rbtn4.addEventListener("click", function () {
+//     tg.MainButton.setText("Pizza");
+//     item = "Pizza/5$";
+//
+//     tg.MainButton.show();
+// });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
     tg.sendData(item);
