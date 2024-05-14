@@ -32,6 +32,55 @@ abtn1.addEventListener("click",function (){
     number.style.display = "block";
 })
 
+count2 = document.getElementById("count2");
+
+abtn2.addEventListener("click", function () {
+    count2.innerText = n_count1 += 1;
+    count2.style.display = "inline-block";
+    tg.MainButton.setText("Burger");
+    tg.MainButton.show();
+    item = "Burger/3/"+count2.innerText;
+
+})
+rbtn2.addEventListener("click", function () {
+    count2.innerText = n_count2 -= 1;
+    count2.style.display = "inline-block";
+    item = "Burger/3/"+count2;
+})
+
+count3 = document.getElementById("count3");
+
+abtn3.addEventListener("click", function () {
+    count3.innerText = n_count3 += 1;
+    count3.style.display = "inline-block";
+    tg.MainButton.setText("Burger");
+    tg.MainButton.show();
+    item = "Burger/3/"+count1.innerText;
+
+})
+rbtn3.addEventListener("click", function () {
+    count3.innerText = n_count3 -= 1;
+    count3.style.display = "inline-block";
+    item = "Burger/3/"+count3;
+})
+
+count4 = document.getElementById("count4");
+
+abtn4.addEventListener("click", function () {
+    count1.innerText = n_count4 += 1;
+    count1.style.display = "inline-block";
+    tg.MainButton.setText("Burger");
+    tg.MainButton.show();
+    item = "Burger/3/"+count4.innerText;
+
+})
+rbtn4.addEventListener("click", function () {
+    count4.innerText = n_count4 -= 1;
+    count4.style.display = "inline-block";
+    item = "Burger/3/"+count4;
+})
+
+
 btn1.addEventListener("click", function () {
     tg.MainButton.setText("Burger " + num);
     item = "Burger/3$";
