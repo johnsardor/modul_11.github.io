@@ -11,7 +11,7 @@ let item1 = " "
 let n_count1 = 0
 
 
-count1 = document.getElementById("count1");
+count1 = document.getElementById("count");
 let rbtn1 = document.getElementById("rbtn1");
 let abtn1 = document.getElementById("abtn1");
 
@@ -113,5 +113,5 @@ abtn4.addEventListener("click", function (){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    tg.sendData(item);
+    tg.sendData(item1);
 });
