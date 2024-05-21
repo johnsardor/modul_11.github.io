@@ -63,7 +63,7 @@ async def get_btn(msg: Message):
         chat_id=msg.chat.id,
         title="To'lov",
         description="Telegram bot orqali to'lov!",
-        provider_token=PROVIDER_TOKEN,
+        provider_token=Provider_token,
         currency="UZS",
         payload="Ichki malumot",
         prices=[LabeledPrice(

@@ -31,6 +31,7 @@ rbtn1.addEventListener("click", function () {
     item1 = "Burger/12000/" + count1.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
+});
 // ------------------2--------------------
 
 count2 = document.getElementById("count2");
@@ -72,10 +73,10 @@ rbtn3.addEventListener("click", function () {
     }
 
     count3.style.display = "inline-block";
-      item3 = "Pepsi/7000/" + count3.innerText;
+    item3 = "Pepsi/7000/" + count3.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-
+});
 
 
 abtn3.addEventListener("click", function (){
