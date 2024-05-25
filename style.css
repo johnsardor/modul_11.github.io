@@ -6,18 +6,41 @@ body {
     background: var(--tg-theme-bg-color);
 }
 .container {
-    max-width: 400px;
+    max-width: 600px;
 }
 .inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
 }
 .img {
     width: 150px;
     height: 150px;
     max-height: 100px;
 }
+.img1{
+    width: 150px;
+    height: 150px;
+    max-height: 260px;
+}
+
+.img2{
+    width: 150px;
+    height: 150px;
+    max-height: 260px;
+}
+
+.img3{
+    width: 150px;
+    height: 150px;
+    max-height: 260px;
+}
+.img4{
+    width: 150px;
+    height: 150px;
+    max-height: 260px;
+}
+
 .item {
     text-align: center;
 }
