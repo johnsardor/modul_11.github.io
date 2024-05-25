@@ -1,18 +1,18 @@
 import os
-from aiogram import Dispatcher, F, Bot,types
+from aiogram import Dispatcher, F, Bot, types
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, LabeledPrice, PreCheckoutQuery
 
 from dotenv import load_dotenv
 
 from keyboards import apple_kb
+
 TOKEN = os.getenv('BOT_TOKEN')
 bot = Bot(token=TOKEN)
 
 Provider_token = os.getenv("PROVIDER_TOKEN")
 
 load_dotenv()
-
 
 dp = Dispatcher()
 
@@ -40,7 +40,6 @@ async def order(msg: Message):
 
 async def pre_checkout(pre_checkout_query: PreCheckoutQuery, bot: Bot):
     await bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True)
-
 
 
 @dp.message(F.func(lambda msg: msg.web_app_data.data))
