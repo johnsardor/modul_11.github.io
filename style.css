@@ -1,3 +1,23 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel .item {
+  flex: 0 0 100%;
+}
+
+.carousel .item.active {
+  flex: 0 0 100%;
+}
+
+
 body {
     margin: 0;
     padding: 0;
