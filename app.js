@@ -1,4 +1,3 @@
-
 let tg = window.Telegram.WebApp;
 tg.expand();
 
@@ -51,8 +50,7 @@ rbtn2.addEventListener("click", function () {
 });
 
 
-
-abtn2.addEventListener("click", function (){
+abtn2.addEventListener("click", function () {
     count2.innerText = n_count2 += 1;
     count2.style.display = "inline-block";
     item2 = "KFC/120000/" + count2.innerText;
@@ -79,10 +77,10 @@ rbtn3.addEventListener("click", function () {
 });
 
 
-abtn3.addEventListener("click", function (){
+abtn3.addEventListener("click", function () {
     count3.innerText = n_count3 += 1;
     count3.style.display = "inline-block";
-     item3 = "Pepsi/7000/" + count3.innerText;
+    item3 = "Pepsi/7000/" + count3.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -105,8 +103,7 @@ rbtn4.addEventListener("click", function () {
 });
 
 
-
-abtn4.addEventListener("click", function (){
+abtn4.addEventListener("click", function () {
     count4.innerText = n_count4 += 1;
     count4.style.display = "inline-block";
     item4 = "Cola/5000/" + count4.innerText;
@@ -115,7 +112,105 @@ abtn4.addEventListener("click", function (){
     tg.MainButton.show();
 });
 
+count5 = document.getElementById("count5");
+rbtn5 = document.getElementById("rbtn5");
+abtn5 = document.getElementById("abtn5");
+let item5 = " ";
+let n_count5 = 0;
+rbtn5.addEventListener("click", function () {
+    if (n_count5 > 0) {
+        count5.innerText = n_count5 -= 1;
+    }
+    item5 = "Hokimyatni 48 qoidasi/40.000/" + count5.innerText;
 
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn5.addEventListener("click", function () {
+    count5.innerText = n_count5 += 1;
+    count5.style.display = "inline-block";
+    item5 = "Hokimyatni 48 qoidasi/40.000/" + count5.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+count6 = document.getElementById("count6");
+rbtn6 = document.getElementById("rbtn6");
+abtn6 = document.getElementById("abtn6");
+let item6 = " ";
+let n_count6 = 0;
+rbtn6.addEventListener("click", function () {
+    if (n_count6 > 0) {
+        count6.innerText = n_count6 -= 1;
+    }
+    item6 = "Rich dad and poor dad/55.000" + count6.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn6.addEventListener("click", function () {
+    count6.innerText = n_count6 += 1;
+    count6.style.display = "inline-block";
+    item6 = "Rich dad and poor dad/55.000" + count6.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+
+});
+count7 = document.getElementById("count7");
+rbtn7 = document.getElementById("rbtn7");
+abtn7 = document.getElementById("abtn7");
+let item7 = " ";
+let n_count7 = 0;
+rbtn7.addEventListener("click", function () {
+    if (n_count7 > 0) {
+        count7.innerText = n_count7 -= 1;
+    }
+    item7 = "Mehrobdan chayon/35.000" + count7.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn7.addEventListener("click", function () {
+    count7.innerText = n_count7 += 1;
+    count7.style.display = "inline-block";
+    item7 = "Mehrobdan chayon/35.000" + count7.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+count8 = document.getElementById("count8");
+rbtn8 = document.getElementById("rbtn8");
+abtn8 = document.getElementById("abtn8");
+let item8 = " ";
+let n_count8 = 0;
+rbtn8.addEventListener("click", function () {
+    if (n_count8 > 0) {
+        count8.innerText = n_count8 -= 1;
+    }
+    item8 = "Molxona/40.000" + count8.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn8.addEventListener("click", function () {
+    count8.innerText = n_count8 += 1;
+    count8.style.display = "inline-block";
+    item8 = "Molxona/40.000" + count8.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
     data = item1 + "|" + item2 + "|" + item3 + "|" + item4
