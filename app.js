@@ -111,6 +111,61 @@ abtn4.addEventListener("click", function () {
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
+count15 = document.getElementById("count15");
+rbtn15 = document.getElementById("rbtn15");
+abtn15 = document.getElementById("abtn15");
+let item15 = " ";
+let n_count15 = 0;
+rbtn15.addEventListener("click", function () {
+    if (n_count15 > 0) {
+        count15.innerText = n_count15 -= 1;
+    }
+    item15 = "Lavash/40000/" + count15.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn15.addEventListener("click", function () {
+    count15.innerText = n_count15 += 1;
+    count15.style.display = "inline-block";
+    item15 = "Cola/5000/" + count15.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+count16 = document.getElementById("count16");
+rbtn16 = document.getElementById("rbtn16");
+abtn16 = document.getElementById("abtn16");
+let item16 = " ";
+let n_count16 = 0;
+rbtn15.addEventListener("click", function () {
+    if (n_count16 > 0) {
+        count16.innerText = n_count16 -= 1;
+    }
+    item16 = "Lavash/40000/" + count16.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn16.addEventListener("click", function () {
+    count16.innerText = n_count16 += 1;
+    count16.style.display = "inline-block";
+    item16 = "Sendvich/14000/" + count16.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+
+
+
+
 
 count5 = document.getElementById("count5");
 rbtn5 = document.getElementById("rbtn5");
@@ -181,7 +236,7 @@ rbtn7.addEventListener("click", function () {
 abtn7.addEventListener("click", function () {
     count7.innerText = n_count7 += 1;
     count7.style.display = "inline-block";
-    item7 = "Mehrobdan chayon/35.000" + count7.innerText;
+    item7 = "Mehrobdan chayon/35000/" + count7.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -196,7 +251,7 @@ rbtn8.addEventListener("click", function () {
     if (n_count8 > 0) {
         count8.innerText = n_count8 -= 1;
     }
-    item8 = "Molxona/40.000" + count8.innerText;
+    item8 = "Molxona/40000" + count8.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -206,7 +261,7 @@ rbtn8.addEventListener("click", function () {
 abtn8.addEventListener("click", function () {
     count8.innerText = n_count8 += 1;
     count8.style.display = "inline-block";
-    item8 = "Molxona/40.000/" + count8.innerText;
+    item8 = "Molxona/40000/" + count8.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();

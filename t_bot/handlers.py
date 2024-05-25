@@ -46,6 +46,7 @@ async def pre_checkout(pre_checkout_query: PreCheckoutQuery, bot: Bot):
 async def get_btn(msg: Message):
     text = msg.web_app_data.data
     product_data = text.split("|")
+    print("text", text)
     products = {}
     for i in range(len(product_data)):
         if len(product_data[i].split("/")) >= 3:
@@ -58,6 +59,7 @@ async def get_btn(msg: Message):
                 "Quantity": int(quantity)
             }
             products[i] = product
+    print(products)
     await bot.send_invoice(
         chat_id=msg.chat.id,
         title="To'lov",
