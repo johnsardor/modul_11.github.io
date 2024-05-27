@@ -355,7 +355,7 @@ rbtn33.addEventListener("click", function () {
     if (n_count33 > 0) {
         count33.innerText = n_count33 -= 1;
     }
-    item33 = "Cola/40000/" + count33.innerText;
+    item33 = "Ocard/500000/" + count33.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -365,7 +365,7 @@ rbtn33.addEventListener("click", function () {
 abtn33.addEventListener("click", function () {
     count33.innerText = n_count33 += 1;
     count33.style.display = "inline-block";
-    item33 = "Cola/40000/" + count33.innerText;
+    item33 = "Ocard/500000/" + count33.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -380,7 +380,7 @@ rbtn34.addEventListener("click", function () {
     if (n_count34 > 0) {
         count34.innerText = n_count34 -= 1;
     }
-    item34 = "Cola/40000/" + count34.innerText;
+    item34 = "Dena/13000/" + count34.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -390,7 +390,7 @@ rbtn34.addEventListener("click", function () {
 abtn34.addEventListener("click", function () {
     count34.innerText = n_count34 += 1;
     count34.style.display = "inline-block";
-    item34 = "Cola/40000/" + count34.innerText;
+    item34 = "Dena/13000/" + count34.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
