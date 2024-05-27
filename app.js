@@ -5,20 +5,6 @@ tg.MainButton.textColor = "#FFFFFF"
 tg.MainButton.color = "#FC3005"
 
 
-let carousel = document.querySelector('.carousel');
-let carouselInner = carousel.querySelector('.carousel-inner');
-let items = carouselInner.querySelectorAll('.item');
-let activeIndex = 0;
-let intervalTime = 3000; // Time between slide transitions (in milliseconds)
-
-function changeSlide() {
-  activeIndex = (activeIndex + 1) % items.length;
-  carouselInner.style.transform = `translateX(-${activeIndex * 100}%)`;
-}
-
-setInterval(changeSlide, intervalTime);
-
-
 // -----------------------1--------------------------
 
 let item1 = " "
@@ -177,11 +163,6 @@ abtn16.addEventListener("click", function () {
 });
 
 
-
-
-
-
-
 count5 = document.getElementById("count5");
 rbtn5 = document.getElementById("rbtn5");
 abtn5 = document.getElementById("abtn5");
@@ -282,8 +263,37 @@ abtn8.addEventListener("click", function () {
     tg.MainButton.show();
 });
 
+
+count9 = document.getElementById("count9");
+rbtn9 = document.getElementById("rbtn9");
+abtn9 = document.getElementById("abtn9");
+let item8 = " ";
+let n_count8 = 0;
+rbtn9.addEventListener("click", function () {
+    if (n_count9 > 0) {
+        count9.innerText = n_count9 -= 1;
+    }
+    item9 = "Molxona/40000" + count9.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn9.addEventListener("click", function () {
+    count9.innerText = n_count9 += 1;
+    count9.style.display = "inline-block";
+    item9 = "Molxona/40000/" + count9.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|"+ item15+ "|" +  item16 + "|"+ item5 + "|" + item6 +"|"+ item7 + "|" + item8
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8
     tg.sendData(data);
 });
+
+
 
