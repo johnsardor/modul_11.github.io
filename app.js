@@ -177,7 +177,7 @@ rbtn5.addEventListener("click", function () {
     if (n_count5 > 0) {
         count5.innerText = n_count5 -= 1;
     }
-    item5 = "Hokimyatni 48 qoidasi/40.000/" + count5.innerText;
+    item5 = "Hokimyatni 48 qoidasi/40000/" + count5.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -187,7 +187,7 @@ rbtn5.addEventListener("click", function () {
 abtn5.addEventListener("click", function () {
     count5.innerText = n_count5 += 1;
     count5.style.display = "inline-block";
-    item5 = "Hokimyatni 48 qoidasi/40.000/" + count5.innerText;
+    item5 = "Hokimyatni 48 qoidasi/40000/" + count5.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -202,7 +202,7 @@ rbtn6.addEventListener("click", function () {
     if (n_count6 > 0) {
         count6.innerText = n_count6 -= 1;
     }
-    item6 = "Rich dad and poor dad/55.000" + count6.innerText;
+    item6 = "Rich dad and poor dad/55000" + count6.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -212,7 +212,7 @@ rbtn6.addEventListener("click", function () {
 abtn6.addEventListener("click", function () {
     count6.innerText = n_count6 += 1;
     count6.style.display = "inline-block";
-    item6 = "Rich dad and poor dad/55.000" + count6.innerText;
+    item6 = "Rich dad and poor dad/55000" + count6.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -227,7 +227,7 @@ rbtn7.addEventListener("click", function () {
     if (n_count7 > 0) {
         count7.innerText = n_count7 -= 1;
     }
-    item7 = "Mehrobdan chayon/35.000" + count7.innerText;
+    item7 = "Mehrobdan chayon/35000" + count7.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
