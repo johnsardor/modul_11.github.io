@@ -72,7 +72,7 @@ rbtn3.addEventListener("click", function () {
     }
 
     count3.style.display = "inline-block";
-    item3 = "Pepsi/7000/" + count3.innerText;
+    item3 = "Hot dog/12000/" + count3.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -81,7 +81,7 @@ rbtn3.addEventListener("click", function () {
 abtn3.addEventListener("click", function () {
     count3.innerText = n_count3 += 1;
     count3.style.display = "inline-block";
-    item3 = "Pepsi/7000/" + count3.innerText;
+    item3 = "Hot dog/12000/" + count3.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -97,7 +97,7 @@ rbtn4.addEventListener("click", function () {
     if (n_count4 > 0) {
         count4.innerText = n_count4 -= 1;
     }
-    item4 = "Cola/5000/" + count4.innerText;
+    item4 = "Pizza/50000/" + count4.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -107,11 +107,14 @@ rbtn4.addEventListener("click", function () {
 abtn4.addEventListener("click", function () {
     count4.innerText = n_count4 += 1;
     count4.style.display = "inline-block";
-    item4 = "Cola/5000/" + count4.innerText;
+    item4 = "Pizza/50000/" + count4.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
+
+
+
 count15 = document.getElementById("count15");
 rbtn15 = document.getElementById("rbtn15");
 abtn15 = document.getElementById("abtn15");
@@ -131,11 +134,13 @@ rbtn15.addEventListener("click", function () {
 abtn15.addEventListener("click", function () {
     count15.innerText = n_count15 += 1;
     count15.style.display = "inline-block";
-    item15 = "Cola/5000/" + count15.innerText;
+    item15 = "Lavash/40000/" + count15.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
+
+
 
 count16 = document.getElementById("count16");
 rbtn16 = document.getElementById("rbtn16");
@@ -146,7 +151,7 @@ rbtn15.addEventListener("click", function () {
     if (n_count16 > 0) {
         count16.innerText = n_count16 -= 1;
     }
-    item16 = "Lavash/40000/" + count16.innerText;
+    item16 = "Sendvich/14000/" + count16.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -162,7 +167,7 @@ abtn16.addEventListener("click", function () {
     tg.MainButton.show();
 });
 
-
+// Kitoblar
 count5 = document.getElementById("count5");
 rbtn5 = document.getElementById("rbtn5");
 abtn5 = document.getElementById("abtn5");
@@ -267,13 +272,13 @@ abtn8.addEventListener("click", function () {
 count9 = document.getElementById("count9");
 rbtn9 = document.getElementById("rbtn9");
 abtn9 = document.getElementById("abtn9");
-let item8 = " ";
-let n_count8 = 0;
+let item9 = " ";
+let n_count9 = 0;
 rbtn9.addEventListener("click", function () {
     if (n_count9 > 0) {
         count9.innerText = n_count9 -= 1;
     }
-    item9 = "Molxona/40000" + count9.innerText;
+    item9 = "Utkan kunlar/40000" + count9.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -283,15 +288,116 @@ rbtn9.addEventListener("click", function () {
 abtn9.addEventListener("click", function () {
     count9.innerText = n_count9 += 1;
     count9.style.display = "inline-block";
-    item9 = "Molxona/40000/" + count9.innerText;
+    item9 = "Utkan kunlar/40000/" + count9.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+// Ichimliklar
+count31 = document.getElementById("count31");
+rbtn31 = document.getElementById("rbtn31");
+abtn31 = document.getElementById("abtn31");
+let item31 = " ";
+let n_count31 = 0;
+rbtn31.addEventListener("click", function () {
+    if (n_count31 > 0) {
+        count31.innerText = n_count31 -= 1;
+    }
+    item31 = "Cola/40000/" + count31.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
 
 
+abtn31.addEventListener("click", function () {
+    count31.innerText = n_count31 += 1;
+    count31.style.display = "inline-block";
+    item31 = "Cola/40000/" + count31.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+count32 = document.getElementById("count32");
+rbtn32 = document.getElementById("rbtn32");
+abtn32 = document.getElementById("abtn32");
+let item32 = " ";
+let n_count32 = 0;
+rbtn32.addEventListener("click", function () {
+    if (n_count32 > 0) {
+        count32.innerText = n_count32 -= 1;
+    }
+    item32 = "Cola/40000/" + count31.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn32.addEventListener("click", function () {
+    count32.innerText = n_count32 += 1;
+    count32.style.display = "inline-block";
+    item32 = "Cola/40000/" + count32.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+count33 = document.getElementById("count33");
+rbtn33 = document.getElementById("rbtn33");
+abtn33 = document.getElementById("abtn33");
+let item33 = " ";
+let n_count33 = 0;
+rbtn33.addEventListener("click", function () {
+    if (n_count33 > 0) {
+        count33.innerText = n_count33 -= 1;
+    }
+    item33 = "Cola/40000/" + count33.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn33.addEventListener("click", function () {
+    count33.innerText = n_count33 += 1;
+    count33.style.display = "inline-block";
+    item33 = "Cola/40000/" + count33.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+count34 = document.getElementById("count34");
+rbtn34 = document.getElementById("rbtn34");
+abtn31 = document.getElementById("abtn34");
+let item34 = " ";
+let n_count34 = 0;
+rbtn34.addEventListener("click", function () {
+    if (n_count34 > 0) {
+        count34.innerText = n_count34 -= 1;
+    }
+    item34 = "Cola/40000/" + count34.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn34.addEventListener("click", function () {
+    count34.innerText = n_count34 += 1;
+    count34.style.display = "inline-block";
+    item34 = "Cola/40000/" + count34.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|" + item9 + "|" + item31 + "|" + item32 + "|" + item33 + "|" + item34
     tg.sendData(data);
 });
 
