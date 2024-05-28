@@ -293,6 +293,33 @@ abtn9.addEventListener("click", function () {
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
+
+count10 = document.getElementById("count10");
+rbtn10 = document.getElementById("rbtn10");
+abtn10 = document.getElementById("abtn10");
+let item10 = " ";
+let n_count10 = 0;
+rbtn10.addEventListener("click", function () {
+    if (n_count10 > 0) {
+        count10.innerText = n_count10 -= 1;
+    }
+    item10 = "Tom Sawyer/120000/" + count10.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn10.addEventListener("click", function () {
+    count10.innerText = n_count10 += 1;
+    count10.style.display = "inline-block";
+    item10 = "Tom Sawyer/120000/" + count10.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+
+});
+
 // Ichimliklar
 count31 = document.getElementById("count31");
 rbtn31 = document.getElementById("rbtn31");
@@ -397,7 +424,7 @@ abtn34.addEventListener("click", function () {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|" + item9 + "|" + item31 + "|" + item32 + "|" + item33 + "|" + item34
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|" + item9 + "|"  + item10 + "|" + item31 + "|" + item32 + "|" + item33 + "|" + item34
     tg.sendData(data);
 });
 
