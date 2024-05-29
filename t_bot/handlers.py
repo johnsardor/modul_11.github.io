@@ -19,7 +19,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(msg: types.Message):
-    await msg.answer("Salom", reply_markup=apple_kb)
+    await msg.answer("Assalomu Aleykum!\n Do'konimizga xush kelibsiz!", reply_markup=apple_kb)
 
 
 @dp.message(Command("pay"))
