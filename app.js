@@ -424,7 +424,8 @@ abtn34.addEventListener("click", function () {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|" + item9 + "|"  + item10 + "|" + item31 + "|" + item32 + "|" + item33 + "|" + item34
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item15 + "|" + item16 + "|" + item5 + "|"
+        + item6 + "|" + item7 + "|" + item8 + "|" + item9 + "|"  + item10 + "|" + item31 + "|" + item32 + "|" + item33 + "|" + item34
     tg.sendData(data);
 });
 
